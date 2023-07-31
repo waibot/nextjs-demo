@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '@project/components';
+import {Header} from '@project/components';
 
 export default function Index() {
   return (
