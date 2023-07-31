@@ -19,13 +19,11 @@ jobs:
 
       - name: Install Dependency
         run: |
-          echo "=======>>>>>>"
-          echo ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           yarn
 
       - name: Build Target
         run: |
-          cd packages/web-app && && yarn build && yarn export && cd ../..
+          cd packages/web-app && yarn build && yarn export && cd ../..
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
